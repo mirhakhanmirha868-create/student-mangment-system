@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.student-form,
+.student-list {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+    margin-bottom: 28px;
+}
+
+.student-form h2,
+.student-list h2 {
+    font-size: 22px;
+    color: #1e293b;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#submitBtn {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+#submitBtn:hover {
+    background: #1d4ed8;
+}
+
+#cancelBtn {
+    background: #e2e8f0;
+    color: #334155;
+    margin-left: 8px;
+}
+
+#cancelBtn:hover {
+    background: #cbd5e1;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+#message {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+thead {
+    background: #eff6ff;
+}
+
+th,
+td {
+    padding: 15px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+th {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+td {
+    color: #475569;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+td button {
+    padding: 8px 12px;
+    margin: 3px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.edit-btn:hover {
+    background: #bfdbfe;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.delete-btn:hover {
+    background: #fecaca;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .student-form,
+    .student-list {
+        padding: 18px;
+    }
+
+    .student-form h2,
+    .student-list h2 {
+        font-size: 19px;
+    }
+
+    #submitBtn,
+    #cancelBtn {
+        margin: 5px 0;
+    }
+}
